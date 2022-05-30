@@ -6,7 +6,7 @@ const Hex = require('crypto-js/enc-hex')
 class FtxClient {
     constructor(apiKey, apiSecretKey, subaccount) {
         this.instance = axios.create({
-            baseURL: 'https://ftx.com/api/',
+            baseURL: 'https://cors-anywhere.herokuapp.com/https://ftx.com/api/',
             timeout: 5000,
             headers: {
                 'accept': 'application/json',
